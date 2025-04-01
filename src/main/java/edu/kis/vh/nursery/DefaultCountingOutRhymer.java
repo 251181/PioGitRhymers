@@ -7,6 +7,8 @@ public class DefaultCountingOutRhymer {
 
     private final int[] numbers = new int[MAX_SIZE];
 
+    // TODO: Getter getTotal nie jest obecnie używany.
+    //  Należy rozważyć jego usunięcie, jeśli nie będzie potrzebny.
     public int getTotal() {
         return total;
     }

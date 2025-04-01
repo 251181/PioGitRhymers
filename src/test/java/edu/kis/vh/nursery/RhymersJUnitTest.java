@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+// Dokonano walidacji projektu testami jednostkowymi. Projekt nie wymaga poprawy.
 public class RhymersJUnitTest {
 
     @Test
