@@ -1,5 +1,9 @@
 package edu.kis.vh.nursery.list;
 
+//TODO: Klasa Node jest wykorzystywana wyłącznie w klasie IntLinkedList,
+// która obecnie nie jest wykorzystywana w projekcie.
+// Należy rozważyć jej usunięcie lub integrację z istniejącym kodem.
+
 /**
  * Klasa Node reprezentuje pojedynczy węzeł listy dwukierunkowej.
  * Jest wykorzystywana w strukturach danych implementujących listy dwukierunkowe,
