@@ -1,0 +1,12 @@
+# Ignore IntelliJ settings
+.idea/
+
+# Ignore compiled files and build outputs
+target/
+
+# Ignore logs
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

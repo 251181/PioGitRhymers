@@ -1,17 +1,20 @@
 package edu.kis.vh.nursery.list;
 
+// TODO: Klasa IntLinkedList nie jest obecnie używana.
+//  Należy rozważyć jej usunięcie lub integrację z istniejącym kodem.
 public class IntLinkedList {
+    private static final int ARRAY_EMPTY_RETURN_VALUE = -1;
 
-    Node last;
-    int i;
+    private Node last;
+    private int i;
 
     public void push(int i) {
         if (last == null)
             last = new Node(i);
         else {
-            last.next = new Node(i);
-            last.next.prev = last;
-            last = last.next;
+            last.setNext(new Node(i));
+            last.getNext().setPrev(last);
+            last = last.getNext();
         }
     }
 
@@ -19,21 +22,23 @@ public class IntLinkedList {
         return last == null;
     }
 
+    // TODO: Funkcja isFull zawsze zwraca false.
+    //  W przyszłych aktualizacjach programu należy dodać logikę poprawnie sprawdzającą pełność listy.
     public boolean isFull() {
         return false;
     }
 
     public int top() {
         if (isEmpty())
-            return -1;
-        return last.value;
+            return ARRAY_EMPTY_RETURN_VALUE;
+        return last.getValue();
     }
 
     public int pop() {
         if (isEmpty())
-            return -1;
-        int ret = last.value;
-        last = last.prev;
+            return ARRAY_EMPTY_RETURN_VALUE;
+        int ret = last.getValue();
+        last = last.getPrev();
         return ret;
     }
 
